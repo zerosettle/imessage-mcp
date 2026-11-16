@@ -14,7 +14,7 @@ If the plugin is unavailable, give me the setup steps and explain any relevant p
 
 ## First check
 
-Call `get_line` once with `{}`. Show the connected business number (`handle`) and whether the line is active (`active`). The account's login number (`your_number`) is separate. If the connector or a field is unavailable, say so. This check should leave the account and line untouched.
+Use the installed ZeroSettle iMessage plugin to call `read_docs` once with `{}`. Report whether the plugin returned the public documentation. If the call fails or the plugin is unavailable, say the connection is unverified. Stop after the check. I can check my line status in the [ZeroSettle console](https://portal.zerosettle.io/imessage).
 
 ## Read and draft
 

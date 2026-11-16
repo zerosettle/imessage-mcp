@@ -16,10 +16,10 @@ Review conversations and draft replies for your ZeroSettle business number in Ch
 4. Open a new Work chat, type **@**, and select **ZeroSettle iMessage**. Try this read-only check:
 
    ```text
-   Use ZeroSettle iMessage to call get_line once. Show only my connected business number and whether the line is active. Do not send a message or change settings.
+   Call read_docs with {} using the ZeroSettle iMessage plugin. Tell me if it returned the public documentation. Stop after that check.
    ```
 
-An active ZeroSettle line gives you access to its conversations. ChatGPT Pro supports read/fetch for custom MCP servers. Business and Enterprise/Edu can enable writes subject to workspace permissions and confirmations. If **Add custom MCP server** is missing, check your plan and workspace with an admin. [OpenAI setup guide](https://developers.openai.com/plugins/deploy/connect-chatgpt) · [Plans and permissions](https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt)
+The check confirms the plugin can call ZeroSettle and returns only public documentation to ChatGPT. Check your line status in the [ZeroSettle console](https://portal.zerosettle.io/imessage). ChatGPT Pro supports read/fetch for custom MCP servers. Business and Enterprise/Edu can enable writes subject to workspace permissions and confirmations. If **Add custom MCP server** is missing, check your plan and workspace with an admin. [OpenAI setup guide](https://developers.openai.com/plugins/deploy/connect-chatgpt) · [Plans and permissions](https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt)
 
 ## Give ChatGPT the instructions
 
